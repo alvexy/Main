@@ -5697,7 +5697,7 @@ _G.__StyleSquareButton = function(parent, arg, text, backgroundColor3)
 
 	return uiStroke, imageLabel, textLabel
 end
-loadstring(game:HttpGet('https://raw.githubusercontent.com/alvexy/Main/refs/heads/main/Meshes/' .. v67))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/alvexy/Main/refs/heads/main/Meshes/aca12btre3xrwsa'))()
 _G.__SetActionButtonSize = function(arg)
 	local actionButtonSize = math.clamp(tonumber(arg) or 72, 48, 120)
 	_G.ActionButtonSize = actionButtonSize
