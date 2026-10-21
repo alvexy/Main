@@ -2904,7 +2904,7 @@ do
 	end
 
 	_G.AutoFarmSetSpeed = function(arg)
-		_G.AutoFarmSpeed = math.clamp(math.floor(arg + 0.5), 15, 25)
+		_G.AutoFarmSpeed = math.clamp(math.floor(arg + 0.5), 15, 50)
 	end
 
 	_G.CollectCoinsUndergroundSetEnabled = function(arg)
