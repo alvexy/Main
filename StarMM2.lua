@@ -14953,7 +14953,7 @@ do
 		Title = "Farm Speed",
 		Flag = "FarmSpeed",
 		Min = 15,
-		Max = 25,
+		Max = 50,
 		Default = 25,
 		Set = "AutoFarmSetSpeed",
 	})
