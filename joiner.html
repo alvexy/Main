@@ -2,13 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Join Roblox Server</title>
+    <title>Joining Roblox Server...</title>
 </head>
 <body>
-    <h1>Join Roblox Server</h1>
-    <!-- Replace numbers below with your target Place ID and Job ID -->
-    <a href="roblox-player:1+launchmode:play+gameinfo:142823291+lowbingserver:8605e894-bfa6-40ec-997e-b25dfced9ef0">
-        Click here to join the server
-    </a>
+    <h2>Connecting to Roblox Server...</h2>
+    <p>If Roblox does not open automatically, <a id="joinLink" href="#">click here</a>.</p>
+
+    <script>
+        // Extract parameters from the URL (e.g., ?placeId=123&gameInstanceId=abc)
+        const urlParams = new URLSearchParams(window.location.search);
+        const placeId = urlParams.get('placeId');
+        const gameInstanceId = urlParams.get('gameInstanceId');
+
+        if (placeId && gameInstanceId) {
+            // Construct the custom Roblox protocol link
+            const robloxUrl = `roblox-player:1+launchmode:play+gameinfo:${placeId}+lowbingserver:${gameInstanceId}`;
+            
+            // Update the fallback link
+            const linkElement = document.getElementById('joinLink');
+            linkElement.href = robloxUrl;
+
+            // Automatically trigger the protocol launch
+            window.location.href = robloxUrl;
+        } else {
+            document.body.innerHTML = "<h2>Error: Missing Place ID or Game Instance ID in the URL.</h2>";
+        }
+    </script>
 </body>
 </html>
